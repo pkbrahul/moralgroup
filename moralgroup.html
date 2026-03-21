@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Moral Group - Gramkendra Computers</title>
+<title>Gramkendra Computers</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -43,7 +43,6 @@ body { margin:0; font-family:Arial; }
     background:#333;
     top:30px;
     min-width:170px;
-    z-index:10;
 }
 
 .dropdown-content a {
@@ -57,9 +56,11 @@ body { margin:0; font-family:Arial; }
 
 .show { display:block; }
 
-/* CONTENT */
-.content {
-    padding:20px;
+/* VIDEO */
+video {
+    width:100%;
+    height:100vh;
+    object-fit:cover;
 }
 
 /* FOOTER */
@@ -85,7 +86,7 @@ footer {
 
 <!-- TOP BAR -->
 <div class="topbar">
-<span>📞 +918084866606 | "मोरल जगाना है, भारत बनाना है!"</span>
+<span>📞 +918084866606    "मोरल जगाना है, भारत बनाना है!                "सुस्वागतम! आपका यहाँ होना हमारे लिए गर्व की बात है।"   "      </span>
 <span>📧 pkb.moral@gmail.com</span>
 </div>
 
@@ -98,19 +99,28 @@ footer {
 <div class="menu-btn">
 <span onclick="toggleMenu(event,'cscMenu')">CSC ▼</span>
 <div id="cscMenu" class="dropdown-content">
-    <a href="./csc1.html">New Registration</a>
-    <a href="./csc2.html">Update Details</a>
+    <a href="csc1.html">New Registration</a>
+    <a href="csc2.html">Update Details</a>
 </div>
 </div>
 
 <div class="menu-btn">
 <span onclick="toggleMenu(event,'reportMenu')">Report ▼</span>
 <div id="reportMenu" class="dropdown-content">
-    <!-- Absolute path recommended for GitHub Pages -->
-    <a href="/moralgroup-website/fmcg-report.html">FMCG Report</a>
-    <a href="/moralgroup-website/mccsl-report.html">MCCSL Report</a>
-    <a href="/moralgroup-website/other1.html">Other1</a>
-    <a href="/moralgroup-website/other2.html">Other2</a>
+    <a href="fmcg-report.html">FMCG Report</a>
+    <a href="mccsl-report.html">MCCSL Report</a>
+    <a href="other1.html">Other1</a>
+    <a href="other2.html">Other2</a>
+</div>
+</div>
+
+<div class="menu-btn">
+<span onclick="toggleMenu(event,'serviceMenu')">Service ▼</span>
+<div id="serviceMenu" class="dropdown-content">
+    <a href="https://youtube.com/@rctechinfo" target="_blank">MCCSL</a>
+    <a href="https://youtube.com/@rctechinfo" target="_blank">FMCG</a>
+    <a href="https://youtube.com/@rctechinfo" target="_blank">Digital Coin</a>
+    <a href="https://youtube.com/@rctechinfo" target="_blank">Account</a>
 </div>
 </div>
 
@@ -119,11 +129,10 @@ footer {
 </div>
 </div>
 
-<!-- MAIN CONTENT -->
-<div class="content">
-<h1>Welcome to Moral Group Reports</h1>
-<p>Yahaan se aap FMCG aur MCCSL reports access kar sakte hain.</p>
-</div>
+<!-- VIDEO -->
+<video autoplay muted loop>
+<source src="https://www.w3schools.com/howto/rain.mp4">
+</video>
 
 <!-- FOOTER -->
 <footer>
