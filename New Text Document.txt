@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramkendra Computers - Digital Seva Kendra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: white; overflow-x: hidden; }
+        .hero-bg { background: linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%); position: relative; min-height: 450px; }
+        
+        /* Top Blue Bar */
+        .top-nav-bar {
+            background: #004a99; color: white; padding: 8px 40px;
+            border-bottom-left-radius: 40px; position: absolute;
+            top: 0; right: 0; width: 65%; z-index: 50;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .svc-card {
+            background: white; border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06); transition: 0.3s;
+            border-bottom: 4px solid transparent; z-index: 10;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+
+        /* Hero Side Images */
+        .side-img-left { position: absolute; left: 30px; top: 120px; width: 200px; z-index: 5; }
+        .side-img-right { position: absolute; right: 30px; top: 120px; width: 200px; z-index: 5; }
+        
+        /* सर्विस लोगो स्टाइल */
+        .svc-logo { width: 50px; height: 50px; object-fit: contain; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-nav-bar text-[10px] md:text-xs font-bold">
+        <span>CSC ID: 144165120011</span>
+        <div class="flex items-center gap-4">
+            <span><i class="fas fa-phone-alt"></i> +91 8084866606</span>
+            <div class="flex gap-2 text-sm">
+                <i class="fab fa-whatsapp text-green-400"></i>
+                <i class="fab fa-instagram text-pink-400"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-10 py-5 relative z-50">
+        <div class="flex items-center gap-2">
+            <div class="bg-[#004a99] p-2 rounded-full text-white"><i class="fas fa-desktop"></i></div>
+            <div>
+                <h1 class="text-[#004a99] font-black text-lg uppercase">Gramkendra</h1>
+                <p class="text-blue-500 font-bold text-[10px]">COMPUTERS</p>
+                <span class="text-[9px] text-gray-400">Rahul Chouhan (VLE)</span>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-6 text-[10px] font-black text-gray-600 uppercase">
+            <a href="#" class="text-blue-600 border-b-2 border-blue-600">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-center">
+        <!-- 1. worker.png -->
+        <img src="worker.png" class="side-img-left hidden lg:block" alt="Worker">
+        <!-- 2. network.png -->
+        <img src="network.png" class="side-img-right hidden lg:block" alt="Network">
+
+        <div class="pt-20 px-4 relative z-10">
+            <h2 class="text-2xl md:text-4xl font-black text-gray-800 mb-6 tracking-tight">
+                PAKBIRABARWAN KA SABSE BHAROSEMAND <br>
+                <span class="text-[#004a99]">DIGITAL SEVA KENDRA</span>
+            </h2>
+            <button class="bg-[#004a99] text-white px-8 py-3 rounded-md font-bold text-xs uppercase shadow-lg">
+                Whatsapp Par Sampark Karein
+            </button>
+        </div>
+    </section>
+
+    <!-- Service Cards Section (6 Boxes with Images) -->
+    <section class="max-w-7xl mx-auto px-6 -mt-16 grid grid-cols-2 md:grid-cols-6 gap-4 relative z-30">
+        
+        <!-- 1. Banking (banking-logo.png) -->
+        <div class="svc-card p-5 text-center border-b-[#004a99]">
+            <img src="banking-logo.png" class="svc-logo" alt="Banking">
+            <h3 class="font-bold text-[10px] mb-1">BANKING POINT</h3>
+            <p class="text-[8px] text-gray-400 uppercase">DigiPay, AEPS, Cash</p>
+        </div>
+
+        <!-- 2. Aadhaar (aadhaar-logo.png) -->
+        <div class="svc-card p-5 text-center border-b-orange-500">
+            <img src="aadhaar-logo.png" class="svc-logo" alt="Aadhaar">
+            <h3 class="font-bold text-[10px] mb-1">AADHAAR & PAN</h3>
+            <p class="text-[8px] text-gray-400 uppercase">Update & Correction</p>
+        </div>
+
+        <!-- 3. Health (health-logo.png) -->
+        <div class="svc-card p-5 text-center border-b-green-500">
+            <img src="health-logo.png" class="svc-logo" alt="Health">
+            <h3 class="font-bold text-[10px] mb-1">HEALTH & INS.</h3>
+            <p class="text-[8px] text-gray-400 uppercase">Ayushman Bharat</p>
+        </div>
+
+        <!-- 4. Bill (bill-logo.png) -->
+        <div class="svc-card p-5 text-center border-b-sky-400">
+            <img src="bill-logo.png" class="svc-logo" alt="Bill">
+            <h3 class="font-bold text-[10px] mb-1">BILL & RECHARGE</h3>
+            <p class="text-[8px] text-gray-400 uppercase">Electricity, Mobile</p>
+        </div>
+
+        <!-- 5. Certificate (certificate-logo.png) -->
+        <div class="svc-card p-5 text-center border-b-orange-400">
+            <img src="certificate-logo.png" class="svc-logo" alt="Certificates">
+            <h3 class="font-bold text-[10px] mb-1">CERTIFICATES</h3>
+            <p class="text-[8px] text-gray-400 uppercase">Jati, Niwas, Aay</p>
+        </div>
+
+        <!-- 6. Travel (travel-logo.png) -->
+        <div class="svc-card p-5 text-center border-b-blue-900">
+            <img src="travel-logo.png" class="svc-logo" alt="Travel">
+            <h3 class="font-bold text-[10px] mb-1">TRAVEL DESK</h3>
+            <p class="text-[8px] text-gray-400 uppercase">Train & Bus Ticket</p>
+        </div>
+
+    </section>
+
+    <!-- Lower Section -->
+    <section class="max-w-7xl mx-auto px-10 py-24 flex flex-col md:flex-row gap-10 items-center relative">
+        <!-- 3. farmer.png -->
+        <img src="farmer.png" class="w-56 hidden lg:block" alt="Farmer">
+        
+        <div class="flex-1">
+            <h2 class="text-xl font-black text-gray-800 border-b-4 border-blue-600 inline-block mb-3 uppercase">Online Form Applications</h2>
+            <p class="text-xs text-gray-500 font-semibold leading-relaxed">
+                Expertise ensures your forms are filled correctly and submitted on time. 
+                Contact for Government Job Forms, Admission, and Solar projects.
+            </p>
+        </div>
+
+        <div class="flex-1 text-right">
+            <!-- 4. tech-img.png -->
+            <img src="tech-img.png" class="w-72 ml-auto" alt="Tech">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#004a99] text-white p-8 text-center text-xs">
+        <p class="font-bold mb-2">GRAMKENDRA COMPUTERS</p>
+        <p class="opacity-70">Near PHC Hospital More, Pakbirabarwan, Bihar | +91 8084866606</p>
+    </footer>
+
+</body>
+</html>

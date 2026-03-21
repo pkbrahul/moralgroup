@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gramkendra Computers - Rahul Chouhan</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body { font-family: 'Poppins', sans-serif; background-color: white; overflow-x: hidden; }
+.hero-bg { background: linear-gradient(180deg, #e3f2fd 0%, #ffffff 100%); position: relative; min-height: 400px; }
+.top-nav-bar { background: #004a99; color: white; padding: 8px 40px; border-bottom-left-radius: 40px; position: absolute; top: 0; right: 0; width: 65%; z-index: 100; display: flex; justify-content: space-between; align-items: center; }
+.nav-item { position: relative; padding: 10px 0; }
+.simple-dropdown { display: none; position: absolute; top: 100%; left: 0; background: white; min-width: 220px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border-radius: 8px; z-index: 1000; border: 1px solid #eee; }
+.nav-item:hover .simple-dropdown { display: block; }
+.simple-dropdown a { display: block; padding: 12px 20px; color: #333; font-size: 11px; font-weight: 700; border-bottom: 1px solid #f8fafc; text-decoration: none; transition: 0.3s; }
+.simple-dropdown a:hover { background: #f0f7ff; color: #004a99; padding-left: 25px; }
+.svc-card { background: white; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); transition: 0.3s; border-bottom: 4px solid transparent; z-index: 10; }
+.svc-card:hover { transform: translateY(-5px); }
+.side-img-left { position: absolute; left: 20px; top: 80px; width: 200px; z-index: 5; }
+.side-img-right { position: absolute; right: 20px; top: 60px; width: 230px; z-index: 5; }
+.svc-logo { width: 45px; height: 45px; object-fit: contain; margin: 0 auto 10px auto; }
+.marquee-bar { background: #004a99; display: flex; align-items: center; padding: 8px 15px; border-radius: 8px; gap: 15px; overflow: hidden; position: relative; }
+.marquee-side-logo { height: 38px; background: white; padding: 3px; border-radius: 4px; flex-shrink: 0; }
+.marquee-text { color: #ffffff; font-weight: 900; text-shadow: 0 0 10px rgba(255,255,255,0.5); white-space: nowrap; display: inline-block; }
+.marquee-inner { display: inline-block; padding-left: 100%; animation: marquee 15s linear infinite; }
+@keyframes marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-100%); } }
+.operator-btn { background: #ff7043; color: white; padding: 10px 25px; border-radius: 8px; font-weight: bold; display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; text-decoration: none; }
+.social-logo-footer { width: 18px; height: 18px; object-fit: contain; display: inline-block; vertical-align: middle; margin-right: 4px; }
+.nav-link.active { border-bottom: 2px solid #004a99; color: #004a99; }
+</style>
+</head>
+<body>
+
+<!-- Top Info Bar -->
+<div class="top-nav-bar text-[10px] md:text-xs font-bold">
+<span>CSC ID: 144165120011</span>
+<div class="flex items-center gap-4">
+<span><i class="fas fa-phone-alt"></i> +91 8084866606</span>
+<div class="flex gap-2 text-sm">
+<a href="#"><i class="fab fa-facebook text-blue-400"></i></a>
+<a href="#"><i class="fab fa-instagram text-pink-400"></i></a>
+<a href="#"><i class="fab fa-youtube text-red-500"></i></a>
+</div>
+</div>
+</div>
+
+<!-- Navigation -->
+<nav class="flex justify-between items-center px-10 py-4 relative z-50">
+<div class="flex items-center gap-2">
+<div class="bg-[#004a99] p-2 rounded-full text-white"><i class="fas fa-desktop"></i></div>
+<div>
+<h1 class="text-[#004a99] font-black text-lg leading-none uppercase">Gramkendra</h1>
+<p class="text-blue-500 font-bold text-[10px]">COMPUTERS</p>
+<span class="text-[9px] text-gray-400 font-bold">Rahul Chouhan (VLE)</span>
+</div>
+</div>
+
+<div id="menuItems" class="hidden md:flex gap-8 text-[11px] font-black text-gray-600 uppercase items-center">
+<a href="https://pkb.rahul.github.io/home.html" class="nav-link active" target="_blank">Home</a>
+<a href="https://www.instagram.com/pkb.rahul/" class="nav-link" target="_blank">About Us</a>
+
+<!-- Services Dropdown -->
+<div class="nav-item">
+<a href="#" class="nav-link flex items-center gap-1">Services <i class="fas fa-chevron-down text-[8px]"></i></a>
+<div class="simple-dropdown">
+<a href="https://www.myutiitsl.com/panonlineservices/CSCLogin" target="_blank">Government Services</a>
+<a href="https://www.myutiitsl.com/panonlineservices/CSCLogin" target="_blank">CSC Digital Services</a>
+<a href="https://www.myutiitsl.com/panonlineservices/CSCLogin" target="_blank">Business & Tax</a>
+<a href="https://www.myutiitsl.com/panonlineservices/CSCLogin" target="_blank">Banking & Financial</a>
+<a href="https://www.myutiitsl.com/panonlineservices/CSCLogin" target="_blank">Certificates & Courses</a>
+<a href="https://www.myutiitsl.com/panonlineservices/CSCLogin" target="_blank">Sarkari Information</a>
+</div>
+</div>
+
+<!-- Our Sites Dropdown -->
+<div class="nav-item">
+<a href="#" class="nav-link flex items-center gap-1">Our Sites <i class="fas fa-chevron-down text-[8px]"></i></a>
+<div class="simple-dropdown">
+<a href="https://pkbrahul.github.io/moralgroup/" target="_blank">Moral Group</a>
+<a href="https://pkbrahul.github.io/cscoperator/" target="_blank">CSC Operator</a>
+<a href="https://pkbrahul.github.io/product/" target="_blank">Product</a>
+<a href="https://pkbrahul.github.io/accessories/" target="_blank">Accessories</a>
+<a href="https://pkbrahul.github.io/gkcomputers/" target="_blank">GK Computers</a>
+</div>
+</div>
+
+<a href="https://www.instagram.com/pkb.rahul/" class="nav-link" target="_blank">Contact Us</a>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-bg text-center">
+<img src="./worker.png" class="side-img-left hidden lg:block" alt="Worker">
+<img src="./network.png" class="side-img-right hidden lg:block" alt="Network">
+<div class="pt-16 px-4 relative z-10">
+<h2 class="text-2xl md:text-4xl font-black text-gray-800 mb-6 tracking-tight uppercase leading-tight">
+PAKBIRABARWAN KA SABSE BHAROSEMAND <br>
+<span class="text-[#004a99]">DIGITAL SEVA KENDRA</span>
+</h2>
+<a href="https://wa.me/918084866606" class="bg-[#004a99] text-white px-8 py-3 rounded-md font-bold text-xs uppercase shadow-lg inline-block">Whatsapp Par Sampark Karein</a>
+</div>
+</section>
+
+<!-- 6 Service Boxes -->
+<section class="max-w-7xl mx-auto px-6 -mt-32 grid grid-cols-2 md:grid-cols-6 gap-4 relative z-30">
+<a href="#" class="svc-card p-5 text-center border-b-[#004a99]">
+<img src="./banking-logo.png" class="svc-logo" alt="Banking">
+<h3 class="font-bold text-[10px]">BANKING POINT</h3>
+</a>
+<a href="#" class="svc-card p-5 text-center border-b-orange-500">
+<img src="./aadhaar-logo.png" class="svc-logo" alt="Aadhaar">
+<h3 class="font-bold text-[10px]">AADHAAR & PAN</h3>
+</a>
+<a href="#" class="svc-card p-5 text-center border-b-green-500">
+<img src="./health-logo.png" class="svc-logo" alt="Health">
+<h3 class="font-bold text-[10px]">HEALTH SERVICE</h3>
+</a>
+<a href="#" class="svc-card p-5 text-center border-b-sky-400">
+<img src="./bill-logo.png" class="svc-logo" alt="Bill">
+<h3 class="font-bold text-[10px]">BILL & RECHARGE</h3>
+</a>
+<a href="#" class="svc-card p-5 text-center border-b-orange-400">
+<img src="./certificate-logo.png" class="svc-logo" alt="Certificates">
+<h3 class="font-bold text-[10px]">CERTIFICATES</h3>
+</a>
+<a href="#" class="svc-card p-5 text-center border-b-blue-900">
+<img src="./travel-logo.png" class="svc-logo" alt="Travel">
+<h3 class="font-bold text-[10px]">TRAVEL DESK</h3>
+</a>
+</section>
+
+<!-- Running Text -->
+<div class="max-w-7xl mx-auto px-6 mt-6">
+<div class="marquee-bar">
+<img src="./csc-logo.png" class="marquee-side-logo" alt="CSC">
+<div class="marquee-inner">
+<span class="marquee-text">Gramkendra Computers में आपका स्वागत है! सभी सरकारी और बैंकिंग सेवाओं के लिए संपर्क करें।</span>
+</div>
+</div>
+</div>
+
+</body>
+</html>
